@@ -12,6 +12,14 @@ body {
   text-align: center;
 }
 
+/* Add a background color with some transparency to make text more visible */
+.content {
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 80%; /* Prevents content from being too wide */
+}
+
 h1 {
   font-size: 50px;
   font-weight: bold;
