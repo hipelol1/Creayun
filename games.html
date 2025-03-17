@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games | Creayun</title>
+    <style>
+        body {
+            background: url('https://www.nasa.gov/sites/default/files/thumbnails/image/iss060e218404.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #1E90FF;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar a {
+            padding: 10px 15px;
+            background: #1E90FF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background: #0a6bb8;
+        }
+
+        .game-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 80%;
+            margin: auto;
+            margin-top: 60px;
+        }
+
+        .game {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .game:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .game a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <a href="https://discord.com/invite/CJMgkBZ284" target="_blank">Discord</a>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="/apps">Apps</a>
+        <a href="/proxy">Proxy</a>
+        <a href="https://docs.google.com/document/d/1MoivIkkl7wZp6eR7GV2KhZ_kUelCOQfO52EOeI-JeeY/edit?tab=t.0" target="_blank">Google Document</a>
+    </nav>
+
+    <h1>Games</h1>
+    <p>Select a game to play!</p>
+
+    <!-- Game Section -->
+    <div class="game-container">
+        <div class="game"><a href="/minecraft">Minecraft (Eaglercraft)</a></div>
+        <div class="game"><a href="https://adsf1234-hacker.github.io/BiggestEaglercraftHackedClientCollection/">Eaglercraft Hacked Clients</a></div>
+        <div class="game"><a href="https://1.konnnnn.srv64.de/">Roblox</a></div>
+        <div class="game"><a href="https://shell.onlypuppy7.online/?payload=%7B%22js%22:%22[%5C%22https://raw.githubusercontent.com/Hydroflame522/StateFarmClient/main/StateFarmClient.js%5C%22]%22,%22css%22:%22[]%22,%22instance%22:%22risenegg.com%22%7D">Shell Shockers Hacks</a></div>
+        <div class="game"><a href="#">Coming Soon...</a></div>
+    </div>
+
+</body>
+</html>
