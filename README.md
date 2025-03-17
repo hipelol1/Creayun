@@ -1,3 +1,4 @@
+**https://discord.com/invite/CJMgkBZ284**
 # 🌌 Creayun - The Ultimate Gaming & Proxy Hub
 
 # Welcome to Creayun, the ultimate website for gaming, apps, and browsing with freedom! 🚀
