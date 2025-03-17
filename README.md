@@ -16,7 +16,9 @@
 
 # 🌠 Features
 
-# ✅ One-Click Access – Instant redirection to games, tools, and apps.✅ Regular Updates – More games and features coming soon!✅ Discord Community – Join us here for updates & discussions.
+✅ **One-Click Access – Instant redirection to games, tools, and apps.**
+✅ **Regular Updates – More games and features coming soon!**
+✅ **Discord Community – Join us here for updates & discussions.**
 
 # 🚀 Explore Now!
 
