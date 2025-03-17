@@ -1,86 +1,74 @@
-    /* Set up a cool galaxy background */
-    body {
-      background: url('https://cdn.dribbble.com/userupload/21754386/file/original-b01dac9e844ff6ead83d7bd57afc6d87.gif') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      font-family: 'Arial', sans-serif;
-      height: 100vh;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* Center content vertically */
-      align-items: center; /* Center content horizontally */
-      text-align: center;
-    }
+/* Set up a cool galaxy background */
+body {
+  background: url('https://cdn.dribbble.com/userupload/21754386/file/original-b01dac9e844ff6ead83d7bd57afc6d87.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  text-align: center;
+}
 
-    /* Add a background color with some transparency to make text more visible */
-    .content {
-      background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
-      padding: 40px;
-      border-radius: 10px;
-      max-width: 80%; /* Prevents content from being too wide */
-    }
+/* Navbar Styling */
+.navbar {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  gap: 20px;
+  z-index: 10;
+}
 
-    h1 {
-      font-size: 50px;
-      font-weight: bold;
-      color: #1E90FF; /* Bold Blue color */
-      margin: 0;
-    }
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
 
-    p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
+.navbar li {
+  padding: 10px;
+}
 
-    /* Navbar Styling on the Top Right */
-    .navbar {
-      position: absolute;
-      right: 20px; /* Position the navbar on the top right */
-      top: 20px;
-      display: flex;
-      justify-content: flex-start;
-      gap: 20px; /* Adds space between the links */
-      z-index: 10;
-    }
+.navbar a {
+  color: white; /* Make text bold white */
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 
-    .navbar ul {
-      list-style-type: none;
-      display: flex;
-      padding: 0;
-    }
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
-    .navbar li {
-      padding: 10px;
-    }
+/* Game Buttons */
+.game-container {
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin-top: 80px;
+}
 
-    .navbar a {
-      color: white; /* Change text color to white */
-      font-size: 16px; /* Keep text size */
-      text-decoration: none;
-      font-weight: bold; /* Make text bold */
-      padding: 10px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
+.game-button {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
 
-    .navbar a:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-    }
-
-    /* Styling for the Google document link */
-    .doc-link {
-      color: white; /* Set link text color to white */
-      font-size: 16px; /* Shorter text size */
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .doc-link:hover {
-      text-decoration: underline;
-    }
-
-    /* Remove the bullet point from the Google Document link */
-    .navbar li:last-child {
-      list-style-type: none; /* Ensures no bullet point for last item */
-    }
+.game-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
