@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creayun - Apps</title>
   <style>
+    /* Basic Styling */
     body {
       background-color: #111; /* Dark background for better contrast */
-      background-size: cover;
       color: white;
       font-family: 'Arial', sans-serif;
       height: 100vh;
@@ -17,21 +17,32 @@
       align-items: center; /* Center content horizontally */
       justify-content: center;
       text-align: center;
+      position: relative; /* Necessary for absolute positioning of moving background */
+      overflow: hidden; /* Ensure content doesn't spill over */
     }
-    
-    /* Minecraft Themed Moving Background (External URL) */
-.minecraft-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://example.com/minecraft-grass-texture.png') repeat; /* External image URL */
-  animation: moveMinecraftBackground 60s linear infinite;
-  pointer-events: none;
-}
 
-    
+    /* Minecraft Themed Moving Background (Grass/Blocks) */
+    .minecraft-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.minecraftskins.com/skins/minecraft/texture/grass-block-texture.jpg') repeat; /* Free Minecraft Grass Texture */
+      animation: moveMinecraftBackground 60s linear infinite;
+      pointer-events: none; /* Prevent the background from interfering with page interactions */
+    }
+
+    @keyframes moveMinecraftBackground {
+      0% {
+        transform: translateX(0) translateY(0);
+      }
+      100% {
+        transform: translateX(-1000px) translateY(1000px);
+      }
+    }
+
+    /* Navbar Styles */
     .navbar {
       position: absolute;
       right: 20px;
@@ -52,7 +63,7 @@
     }
 
     .navbar a {
-      color: white; /* Make text bold white */
+      color: white;
       font-size: 16px;
       text-decoration: none;
       font-weight: bold;
@@ -65,18 +76,21 @@
       background-color: rgba(255, 255, 255, 0.3);
     }
 
+    /* App Box Styles */
     .app-container {
-      background-color: rgba(0, 0, 0, 0.8); /* Slightly darker transparent background */
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 40px;
       border-radius: 10px;
       max-width: 80%;
-      border: 2px solid rgba(255, 255, 255, 0.8); /* Border added to make box visible */
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      z-index: 20;
+      position: relative;
     }
 
     h1 {
       font-size: 50px;
       font-weight: bold;
-      color: #ffffff; /* White text */
+      color: #ffffff;
       margin: 0;
     }
 
@@ -85,6 +99,7 @@
       margin-top: 10px;
     }
     
+    /* Button Styles */
     .app-button {
       display: inline-block;
       background-color: rgba(255, 255, 255, 0.2);
@@ -105,6 +120,9 @@
   </style>
 </head>
 <body>
+
+  <!-- Minecraft Themed Moving Background -->
+  <div class="minecraft-background"></div>
 
   <!-- Apps Section -->
   <div class="app-container">
