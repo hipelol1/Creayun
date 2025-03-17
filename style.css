@@ -55,10 +55,10 @@
     }
 
     .navbar a {
-      color: white; /* Set link text color to black */
-      font-size: 16px; /* Shorter text size */
+      color: white; /* Change text color to white */
+      font-size: 16px; /* Keep text size */
       text-decoration: none;
-      font-weight: bold;
+      font-weight: bold; /* Make text bold */
       padding: 10px;
       border-radius: 5px;
       transition: background-color 0.3s ease;
@@ -70,7 +70,7 @@
 
     /* Styling for the Google document link */
     .doc-link {
-      color: white; /* Set link text color to black */
+      color: white; /* Set link text color to white */
       font-size: 16px; /* Shorter text size */
       text-decoration: none;
       font-weight: bold;
@@ -78,4 +78,9 @@
 
     .doc-link:hover {
       text-decoration: underline;
+    }
+
+    /* Remove the bullet point from the Google Document link */
+    .navbar li:last-child {
+      list-style-type: none; /* Ensures no bullet point for last item */
     }
