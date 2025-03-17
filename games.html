@@ -1,36 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games | Creayun</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creayun - Games</title>
+  <style>
+    /* Set up a cool galaxy background */
+    body {
+      background: url('https://cdn.dribbble.com/userupload/21754386/file/original-b01dac9e844ff6ead83d7bd57afc6d87.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center content horizontally */
+      text-align: center;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      display: flex;
+      gap: 20px;
+      z-index: 10;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      display: flex;
+      padding: 0;
+    }
+
+    .navbar li {
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: white; /* Make text bold white */
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Game Buttons */
+    .game-container {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 80%;
+      margin-top: 80px;
+    }
+
+    .game-button {
+      display: block;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+      font-weight: bold;
+      padding: 15px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .game-button:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+  </style>
 </head>
 <body>
 
-    <!-- Top Navigation Bar -->
+  <!-- Navbar -->
+  <header>
     <nav class="navbar">
-        <a href="https://discord.com/invite/CJMgkBZ284" target="_blank">Discord</a>
-        <a href="https://hipelol1.github.io/">Home</a>
-        <a href="games.html">Games</a>
-        <a href="/apps">Apps</a>
-        <a href="/proxy">Proxy</a>
-        <a href="https://docs.google.com/document/d/1MoivIkkl7wZp6eR7GV2KhZ_kUelCOQfO52EOeI-JeeY/edit?tab=t.0" target="_blank">Google Document</a>
+      <ul>
+        <li><a href="https://discord.com/invite/CJMgkBZ284" target="_blank">Discord</a></li>
+        <li><a href="/games">Games</a></li>
+        <li><a href="/apps">Apps</a></li>
+        <li><a href="/proxy">Proxy</a></li>
+        <li><a href="https://docs.google.com/document/d/1MoivIkkl7wZp6eR7GV2KhZ_kUelCOQfO52EOeI-JeeY/edit?tab=t.0" target="_blank">Laith's Google Document</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <h1>Games</h1>
-    <p>Select a game to play!</p>
-
-    <!-- Game Section -->
-    <div class="game-container">
-        <div class="game"><a href="/minecraft">Minecraft (Eaglercraft)</a></div>
-        <div class="game"><a href="https://adsf1234-hacker.github.io/BiggestEaglercraftHackedClientCollection/">Eaglercraft Hacked Clients</a></div>
-        <div class="game"><a href="/">Roblox</a></div>
-        <div class="game"><a href="https://bluescreenofdeath539onroblox.github.io/polytrack-0.4.1">Polytrack 0.4.1</a></div>
-        <div class="game"><a href="https://iammyguy21th.github.io/scratch-games-on-turbowarp">Scratch Games</a></div>
-        <div class="game"><a href="https://shell.onlypuppy7.online/?payload=%7B%22js%22:%22[%5C%22https://raw.githubusercontent.com/Hydroflame522/StateFarmClient/main/StateFarmClient.js%5C%22]%22,%22css%22:%22[]%22,%22instance%22:%22risenegg.com%22%7D">Shell Shockers Hacks</a></div>
-        <div class="game"><a href="#">Coming Soon...</a></div>
-    </div>
+  <!-- Games Section -->
+  <div class="game-container">
+    <h1>🎮 Games</h1>
+    <a href="https://g.eags.us/eaglercraft" target="_blank" class="game-button">Minecraft (Eaglercraft)</a>
+    <a href="https://adsf1234-hacker.github.io/BiggestEaglercraftHackedClientCollection/" target="_blank" class="game-button">Eaglercraft Hacked Clients</a>
+    <a href="#" class="game-button">Roblox</a>
+    <a href="https://shell.onlypuppy7.online/?payload=%7B%22js%22:%22[%5C%22https://raw.githubusercontent.com/Hydroflame522/StateFarmClient/main/StateFarmClient.js%5C%22]%22,%22css%22:%22[]%22,%22instance%22:%22risenegg.com%22%7D" target="_blank" class="game-button">Shell Shockers Hacks</a>
+    <a href="#" class="game-button">Coming Soon...</a>
+    <br>
+    <a href="https://hipelol1.github.io/" class="game-button">Back to Home</a>
+  </div>
 
 </body>
 </html>
