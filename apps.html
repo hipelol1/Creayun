@@ -4,7 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creayun - Apps</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Set up a cool galaxy background */
+    body {
+      background: url('https://cdn.dribbble.com/userupload/21754386/file/original-b01dac9e844ff6ead83d7bd57afc6d87.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center content horizontally */
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      display: flex;
+      gap: 20px;
+      z-index: 10;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      display: flex;
+      padding: 0;
+    }
+
+    .navbar li {
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: white; /* Make text bold white */
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Apps Section Styling */
+    .app-container {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 80%;
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+      color: #ffffff; /* White text */
+      margin: 0;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* App Button Styling */
+    .app-button {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+      font-weight: bold;
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .app-button:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  </style>
 </head>
 <body>
 
@@ -17,19 +105,22 @@
         <li><a href="/apps">Apps</a></li>
         <li><a href="/proxy">Proxy</a></li>
         <li><a href="https://docs.google.com/document/d/1MoivIkkl7wZp6eR7GV2KhZ_kUelCOQfO52EOeI-JeeY/edit?tab=t.0" target="_blank">Laith's Google Document</a></li>
+        <!-- New Home Button -->
+        <li><a href="https://hipelol1.github.io/" target="_blank">Home</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Apps Section -->
-  <div class="content">
+  <div class="app-container">
     <h1>📱 Creayun Apps</h1>
     <p><strong>Explore powerful tools and apps!</strong></p>
     
+    <!-- Proxy Browser Button -->
     <a href="https://docs.google.com/document/d/1MoivIkkl7wZp6eR7GV2KhZ_kUelCOQfO52EOeI-JeeY/edit?tab=t.6iboj7d0pwhi" target="_blank" class="app-button">Proxy Browser - Use Now</a>
-    <a href="https://docs.google.com/document/d/1MoivIkkl7wZp6eR7GV2KhZ_kUelCOQfO52EOeI-JeeY/edit?tab=t.0" target="_blank" class="app-button">Laith's Google Document</a>
 
     <br>
+    <!-- Home Button -->
     <a href="https://hipelol1.github.io/" class="app-button">Back to Home</a>
   </div>
 
