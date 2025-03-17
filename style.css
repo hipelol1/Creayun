@@ -12,6 +12,29 @@ body {
   justify-content: center;
   text-align: center;
 }
+<script src="three.r134.min.js"></script>
+<script src="vanta.birds.min.js"></script>
+<script>
+VANTA.BIRDS({
+  el: "#your-element-selector",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0x6fff,
+  color1: 0xfa390f,
+  color2: 0x69ff,
+  birdSize: 2.20,
+  wingSpan: 20.00,
+  speedLimit: 4.00,
+  separation: 97.00,
+  alignment: 10.00,
+  cohesion: 10.00
+})
+</script>
 
 /* Add a background color with some transparency to make text more visible */
 .content {
