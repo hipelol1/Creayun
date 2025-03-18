@@ -1,4 +1,4 @@
-
+/* Set up a cool galaxy background */
 body {
   background: url('https://i.redd.it/4ec77oea73c41.gif') no-repeat center center fixed;
   background-size: cover;
@@ -8,24 +8,24 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Center content horizontally */
   justify-content: center;
   text-align: center;
 }
 
-
+/* Add a background color with some transparency to make text more visible */
 .content {
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
   backdrop-filter: blur(10px);
   padding: 40px;
   border-radius: 10px;
-  max-width: 80%; /* 
+  max-width: 80%; /* Prevents content from being too wide */
 }
 
 h1 {
   font-size: 50px;
   font-weight: bold;
-  color: #ffffff;
+  color: #ffffff; / White text /
   margin: 0;
 }
 
@@ -34,7 +34,7 @@ p {
   margin-top: 10px;
 }
 
-
+/* Navbar Styling */
 .navbar {
   position: absolute;
   backdrop-filter: blur(10px);
@@ -56,7 +56,7 @@ p {
 }
 
 .navbar a {
-  color: white;
+  color: white; /* Make text bold white */
   font-size: 16px;
   text-decoration: none;
   font-weight: bold;
@@ -71,9 +71,9 @@ p {
   box-shadow: 0px 0px 5px 2px #ffffff;
 }
 
-
+/* Game Buttons */
 .game-container, .app-container {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
   padding: 40px;
   border-radius: 10px;
   max-width: 80%;
@@ -95,7 +95,7 @@ p {
   transition: background-color 0.3s ease;
 }
 
-
+/* Button Styles */
 .app-button {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.2);
