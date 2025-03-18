@@ -72,7 +72,7 @@ p {
 }
 
 /* Game Buttons */
-.game-container {
+.game-container, .app-container {
   background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
   padding: 40px;
   border-radius: 10px;
@@ -93,18 +93,6 @@ p {
   text-decoration: none;
   font-size: 18px;
   transition: background-color 0.3s ease;
-}
-
-/* App Box Styles */
-.app-container {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 80%;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  z-index: 20;
-  position: relative;
-  backdrop-filter: blur(10px);
 }
 
 /* Button Styles */
