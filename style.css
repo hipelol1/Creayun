@@ -1,4 +1,4 @@
-/* Set up a cool galaxy background */
+
 body {
   background: url('https://i.redd.it/4ec77oea73c41.gif') no-repeat center center fixed;
   background-size: cover;
@@ -13,7 +13,7 @@ body {
   text-align: center;
 }
 
-/* Add a background color with some transparency to make text more visible */
+
 .content {
   background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
   backdrop-filter: blur(10px);
@@ -71,7 +71,7 @@ p {
   box-shadow: 0px 0px 5px 2px #ffffff;
 }
 
-/* Game Buttons */
+
 .game-container, .app-container {
   background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
   padding: 40px;
@@ -95,7 +95,7 @@ p {
   transition: background-color 0.3s ease;
 }
 
-/* Button Styles */
+
 .app-button {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.2);
