@@ -14,36 +14,6 @@
       margin: 20px;
     }
 
-    .toggle-button {
-      position: relative;
-      width: 60px;
-      height: 30px;
-      background-color: red;
-      border-radius: 15px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .toggle-button:before {
-      content: '';
-      position: absolute;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background-color: white;
-      left: 1px;
-      top: 1px;
-      transition: transform 0.3s;
-    }
-
-    .toggle-button.on {
-      background-color: green;
-    }
-
-    .toggle-button.on:before {
-      transform: translateX(30px);
-    }
-
     .button-label {
       margin-left: 10px;
       font-size: 18px;
@@ -82,60 +52,15 @@
   </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="https://discord.com/invite/CJMgkBZ284" target="_blank">Discord</a></li>
-        <li><a href="/games">Games</a></li>
-        <li><a href="/apps">Apps</a></li>
-        <li><a href="/proxy">Proxy</a></li>
-        <li><a href="/tools">Tools</a></li>
-        <li><a href="https://github.com/hipelol1/hipelol1.github.io/">Github</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <div class="content">
     <h1>Settings</h1>
     <div class="toggle-container">
-      <div id="hacked-client-toggle" class="toggle-button"></div>
-      <span class="button-label">Turn ON/OFF Hacked Clients</span>
-    </div>
-
-    <div class="toggle-container">
-      <div id="cloaker-toggle" class="toggle-button"></div>
-      <span class="button-label">Turn ON/OFF Cloaker (opens about:blank)</span>
+      <input type="checkbox" id="hacked-client-toggle" class="toggle-button" data-checked="false" data-customcondition="confirm('Are you sure you would like to enable hacked clients? You run the risk of getting banned on most servers.')"></input>
+      <span class="button-label">Enable Hacked Clients</span>
     </div>
   </div>
 
   <iframe src="about:blank" id="cloaker-iframe" onload="this.contentWindow.focus()"></iframe>
-  
-  <a class="corner-button" href="/">Back to Home</a>
-
-  <script>
-    const hackedClientToggle = document.getElementById("hacked-client-toggle");
-    const cloakerToggle = document.getElementById("cloaker-toggle");
-    const cloakerIframe = document.getElementById("cloaker-iframe");
-
-    hackedClientToggle.addEventListener("click", function () {
-      hackedClientToggle.classList.toggle("on");
-      // Add functionality for hacked client when it's on
-    });
-
-    cloakerToggle.addEventListener("click", function () {
-      cloakerToggle.classList.toggle("on");
-
-      if (cloakerToggle.classList.contains("on")) {
-        // When turned on, open about:blank in the iframe
-        cloakerIframe.style.display = "block"; // Show iframe
-        cloakerIframe.src = 'https://hipelol1.github.io';
-      } else {
-        // When turned off, hide the iframe
-        cloakerIframe.style.display = "none"; // Hide iframe
-        cloakerIframe.src = 'about:blank'; // Reset iframe source
-      }
-    });
-  </script>
+  <script src="js/settings.js"></script>
 </body>
 </html>
