@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>Settings - Creayun</title>
+  <style>
+    .settings-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      text-align: center;
+    }
+
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .toggle-label {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 50px;
+      height: 25px;
+      background-color: red;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .toggle-switch::before {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      background-color: white;
+      border-radius: 50%;
+      top: 1px;
+      left: 2px;
+      transition: 0.3s;
+    }
+
+    .toggle-switch.active {
+      background-color: green;
+    }
+
+    .toggle-switch.active::before {
+      left: 25px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="https://discord.com/invite/CJMgkBZ284" target="_blank">Discord</a></li>
+        <li><a href="/games">Games</a></li>
+        <li><a href="/apps">Apps</a></li>
+        <li><a href="/proxy">Proxy</a></li>
+        <li><a href="/tools">Tools</a></li>
+        <li><a href="/credits">Credits</a></li>
+        <li><a href="/settings">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="settings-container">
+    <div class="toggle-container">
+      <label class="toggle-label">Turn ON/OFF Hacked Clients:</label>
+      <div class="toggle-switch" id="toggleButton"></div>
+    </div>
+  </div>
+
+  <footer style="text-align: center; font-size: .7em;">
+    Settings Page - Creayun
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.getElementById("toggleButton");
+
+      toggleButton.addEventListener("click", function () {
+        toggleButton.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>
