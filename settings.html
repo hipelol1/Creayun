@@ -68,6 +68,17 @@
     .corner-button:hover {
       background-color: #444;
     }
+    
+    /* Style for the iframe */
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -89,22 +100,23 @@
     <h1>Settings</h1>
     <div class="toggle-container">
       <div id="hacked-client-toggle" class="toggle-button"></div>
-      <span class="button-label">Toggle Hacked Clients</span>
+      <span class="button-label">Turn ON/OFF Hacked Clients</span>
     </div>
 
     <div class="toggle-container">
       <div id="cloaker-toggle" class="toggle-button"></div>
-      <span class="button-label">Toggle Cloaker (opens about:blank)</span>
+      <span class="button-label">Turn ON/OFF Cloaker (opens about:blank)</span>
     </div>
   </div>
 
-  <iframe src="about:blank" class="contentFrame" style="width: 100%; height: 100%; border: none; position: absolute; left: 0; top: 0; display: none;" onload="this.contentWindow.focus()"></iframe>
+  <iframe src="about:blank" id="cloaker-iframe" onload="this.contentWindow.focus()"></iframe>
   
   <a class="corner-button" href="/">Back to Home</a>
 
   <script>
     const hackedClientToggle = document.getElementById("hacked-client-toggle");
     const cloakerToggle = document.getElementById("cloaker-toggle");
+    const cloakerIframe = document.getElementById("cloaker-iframe");
 
     hackedClientToggle.addEventListener("click", function () {
       hackedClientToggle.classList.toggle("on");
@@ -113,10 +125,16 @@
 
     cloakerToggle.addEventListener("click", function () {
       cloakerToggle.classList.toggle("on");
+
       if (cloakerToggle.classList.contains("on")) {
-        window.open('about:blank', '_blank'); // Open a new tab with about:blank when toggled green
+        // When turned on, open about:blank in the iframe
+        cloakerIframe.style.display = "block"; // Show iframe
+        cloakerIframe.src = 'https://hipelol1.github.io';
+      } else {
+        // When turned off, hide the iframe
+        cloakerIframe.style.display = "none"; // Hide iframe
+        cloakerIframe.src = 'about:blank'; // Reset iframe source
       }
-      // Add more functionality for cloaker if needed in the future
     });
   </script>
 </body>
