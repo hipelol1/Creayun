@@ -1,3 +1,13 @@
 body {
-    background: url('../4ec77oea73c41.gif') no-repeat center center fixed;
+  background: url('../4ec77oea73c41.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center;
+  text-align: center;
 }
