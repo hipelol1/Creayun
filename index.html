@@ -44,6 +44,30 @@
     .navbar a:hover {
       background-color: #444;
     }
+
+    .content {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .content h1 {
+      font-size: 3em;
+      color: #fff;
+    }
+
+    .content p {
+      font-size: 1.5em;
+      color: #fff;
+    }
+
+    .game-button {
+      color: #00b0ff;
+      text-decoration: none;
+    }
+
+    .game-button:hover {
+      color: #ff4081;
+    }
   </style>
 </head>
 <body>
@@ -57,7 +81,6 @@
         <li><a data-href="/proxy">Proxy</a></li>
         <li><a data-href="/tools">Tools</a></li>
         <li><a href="https://github.com/hipelol1/hipelol1.github.io/">Github</a></li>
-        <!-- Added Settings button here -->
         <li><a href="/settings">Settings</a></li>
       </ul>
     </nav>
@@ -87,9 +110,8 @@
       link.style.cursor = 'pointer';
     });
 
-    // Load the Credits page inside the iframe
     document.getElementById("credits-button").addEventListener("click", function() {
-      document.querySelector('.contentFrame').src = "/credits.html"; // Make sure credits.html exists
+      document.querySelector('.contentFrame').src = "/credits.html";
       document.querySelector('.contentFrame').style.display = 'block';
       document.querySelector('.content').style.display = 'none';
     });
