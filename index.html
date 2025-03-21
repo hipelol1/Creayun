@@ -9,15 +9,24 @@
   <style>
     .navbar {
       position: fixed;
-      top: 50%;
+      top: 0;
       right: 0;
-      transform: translateY(-50%);
-      text-align: right;
       padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 0 0 10px 10px;
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .navbar li {
+      margin: 0 10px;
     }
     .corner-button {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 5px 15px;
       background: rgba(255, 255, 255, 0.2);
       color: white;
       text-decoration: none;
